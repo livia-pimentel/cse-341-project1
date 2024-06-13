@@ -1,0 +1,97 @@
+
+//**********************GET ALL************************
+ 
+//users
+
+### Render
+
+GET https://cse-341-project1-ymsc.onrender.com/users
+
+### Local Host
+
+GET http://localhost:3000/users
+ 
+//**********************GET ONE************************
+
+//USER
+
+### Render
+
+GET https://cse-341-project1-ymsc.onrender.com/users/6663d743564f11d2f8dfa451
+
+### Local Host
+
+GET http://localhost:3000/users/6663d8eb564f11d2f8dfa453
+ 
+//*******************POST***************************
+
+//USER
+
+### Render
+
+POST https://cse-341-project1-ymsc.onrender.com/users
+Content-Type: application/json
+ 
+{
+    "_id": "666a05bd79136a2da106d87916",
+    "username": "lily@bbb.com",
+    "email": "lily@bbb.com",
+    "name": "Lily",
+    "ipaddress": "94.121.163.55"
+}
+ 
+### Local Host
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "bob@bbb.com",
+    "email": "bob@bbb.com",
+    "name": "Novo",
+    "ipaddress": "94.121.163.85"
+}
+ 
+//******************UPDATE/PUT****************************
+
+//USER
+
+### Render
+
+PUT https://cse-341-project1-ymsc.onrender.com/users/666ad92cc9ad0f79450d5170
+Content-Type: application/json
+ 
+{   
+        "_id": "666ad92cc9ad0f79450d5170",
+        "username": "john@aaa.com",
+        "email": "john@aaa.com",
+        "name": "John",
+        "ipaddress": "94.121.168.53"
+
+}
+ 
+### Local Host
+
+PUT http://localhost:3000/users/666add4173433590809e8622
+Content-Type: application/json
+ 
+{       
+    "_id": "666add4173433590809e8622",
+    "username": "isa@test.com",
+    "email": "isa@test.com",
+    "name": "Bella",
+    "ipaddress": "94.121.163.63"
+
+}
+ 
+//******************DELETE****************************
+
+//USER
+
+### Render
+
+DELETE https://cse-341-project1-ymsc.onrender.com/users/6663d8eb564f11d2f8dfa453
+ 
+### Local Host
+
+DELETE http://localhost:3000/users/666ae0c9591ca8cc1eba4087
