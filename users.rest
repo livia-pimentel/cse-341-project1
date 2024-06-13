@@ -72,14 +72,14 @@ Content-Type: application/json
  
 ### Local Host
 
-PUT http://localhost:3000/users/666add4173433590809e8622
+PUT http://localhost:3000/users/666a15892566f0636f2181ae
 Content-Type: application/json
  
 {       
-    "_id": "666add4173433590809e8622",
-    "username": "isa@test.com",
-    "email": "isa@test.com",
-    "name": "Bella",
+    "_id": "666a15892566f0636f2181ae",
+    "username": "rafael",
+    "email": "raf@test.com",
+    "name": "Rafael",
     "ipaddress": "94.121.163.63"
 
 }
