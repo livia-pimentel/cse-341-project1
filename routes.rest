@@ -1,0 +1,100 @@
+
+//**********************GET ALL************************
+ 
+//contacts
+
+### Render
+
+GET https://cse-341-project1-ymsc.onrender.com/contacts
+
+### Local Host
+
+GET http://localhost:3000/contacts
+ 
+//**********************GET ONE************************
+
+//CONTACT
+
+### Render
+
+GET https://cse-341-project1-ymsc.onrender.com/contacts/66650c006dae3d805bc6cd02
+
+### Local Host
+
+GET http://localhost:3000/contacts/66650c006dae3d805bc6cd02
+ 
+//*******************POST***************************
+
+//CONTACT
+
+### Render
+
+POST https://cse-341-project1-ymsc.onrender.com/contacts
+Content-Type: application/json
+ 
+{
+    "firstName": "Liliane",
+    "lastName": "Alvarez",
+    "email": "lily@bbb.com",
+    "favoriteColor": "yellow",
+    "birthday": "12/19/1992"
+}
+ 
+### Local Host
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+    "firstName": "Juca",
+    "lastName": "Fure",
+    "email": "jcfure@bbb.com",
+    "favoriteColor": "orange",
+    "birthday": "11/30/1978"
+}
+ 
+//******************UPDATE/PUT****************************
+
+//CONTACT
+
+### Render
+
+PUT https://cse-341-project1-ymsc.onrender.com/contacts/66650c166dae3d805bc6cd03
+Content-Type: application/json
+ 
+{   
+        "_id": "66650c166dae3d805bc6cd03",
+        "firstName": "João",
+        "lastName": "Victor",
+        "email": "j_vic@teste.com.br",
+        "favoriteColor": "blue",
+        "birthday": "09/17/1993"
+
+}
+ 
+### Local Host
+
+PUT http://localhost:3000/contacts/666c39b4d2b4cc7ad0413a1d
+Content-Type: application/json
+ 
+{       
+    "_id": "666c39b4d2b4cc7ad0413a1d",
+    "firstName": "Alteração",
+    "lastName": "Mudança",
+    "email": "jo@test.com",
+    "favoriteColor": "white",
+    "birthday": "02/21/1995"
+
+}
+ 
+//******************DELETE****************************
+
+//CONTACT
+
+### Render
+
+DELETE https://cse-341-project1-ymsc.onrender.com/contacts/6663d8eb564f11d2f8dfa453
+ 
+### Local Host
+
+DELETE http://localhost:3000/contacts/666c394764144169abc2774f
