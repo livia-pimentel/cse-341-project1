@@ -37,7 +37,7 @@ const createContact = async (req, res) => {
     }
 }
 
-updateContact = async (req, res) => {
+const updateContact = async (req, res) => {
     //#swagger.tags=['Contacts']
     const contactId = new ObjectId(req.params.id)
     const contact = {
@@ -55,7 +55,7 @@ updateContact = async (req, res) => {
     }
 }
 
-deleteContact = async (req, res) => {
+const deleteContact = async (req, res) => {
     //#swagger.tags=['Contact']
     const contactId = new ObjectId(req.params.id)
     const response = await mongodb.getDatabase().db().collection('contacts').deleteOne({_id: contactId})
